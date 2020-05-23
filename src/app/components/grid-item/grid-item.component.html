@@ -1,0 +1,18 @@
+<div class="store-item-thumbnail store-item loaded" [attr.data-id]="store.id">
+  <div class="store-thumbnail-details">
+    <div class="store-img">
+      <div class="img-backdrop lazy-img" [attr.data-src]="store.logo" style="background-image: url({{store.thumbs[0].img}});"></div>
+      <img class="lazy-img" src="{{store.thumbs[0].img}}" alt="">
+    </div>
+    <div class="store-details-wrap d-flex align-items-start flex-wrap">
+      <div class="store-icon">
+        <img class="lazy-img" src="{{store.logo}}" alt="">
+      </div>
+      <div class="store-details col">
+        <div class="store-name">{{store.name}}</div>
+        <div class="store-category">{{store.category_label}}</div>
+        <div class="store-category"> {{store.distance}} {{store.city}}</div>
+      </div>
+    </div>
+  </div>
+</div>

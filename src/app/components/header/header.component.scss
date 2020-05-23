@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+// configurations
+@import '~src/styles/abstracts/variables';
+@import '~src/styles/abstracts/mixins';
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #262F41;
+
+  .navbar-nav {
+    .nav-link {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+
+    }
+
+    @media(min-width: 768px) {
+      .nav-link {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .send-gift {
+    min-width: 150px;
+    padding: 12px 15px;
+    background-color: $primary-color;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: $primary-color-dark;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    >.container {
+      padding-left: 100px;
+      padding-right: 100px;
+      max-width: none;
+    }
+  }
+}
+
+.navbar-brand {
+  padding: 5px;
+  background-color: #fff;
+
+  img {
+    width: 54px;
+  }
+
+  @media(min-width: 768px) {
+    padding: 10px;
+
+    img {
+      width: 75px;
+    }
+  }
+}
